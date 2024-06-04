@@ -1,0 +1,38 @@
+{
+    "000001": {
+      "nombres": "Pedro Jaimes",
+      "apellidos": "Gómez Mejía",
+      "horario_disponible": {"06:00 - 10:00": "Disponible", 
+                             "14:00 - 18:00": "Disponible"}
+    },
+    "000002": {
+      "nombres": "María Juana",
+      "apellidos": "Martínez Dominguez",
+      "horario_disponible": {"10:00 - 14:00": "Disponible", 
+                             "18:00 - 22:00": "Disponible"}
+    },
+    "000003": {
+      "nombres": "Ana Laura",
+      "apellidos": "López Gonzalez",
+      "horario_disponible": {"06:00 - 10:00": "Disponible", 
+                             "14:00 - 18:00": "Disponible"}
+    },
+    "000004": {
+      "nombres": "Juan",
+      "apellidos": "Rodríguez",
+      "horario_disponible": {"10:00 - 14:00": "Disponible", 
+                             "18:00 - 22:00": "Disponible"}
+    },
+    "000005": {
+        "nombres": "Ana Maria",
+        "apellidos": "López Palmares",
+        "horario_disponible": {"06:00 - 10:00": "Disponible", 
+                               "14:00 - 18:00": "Disponible"}
+    },
+      "000006": {
+        "nombres": "Ana",
+        "apellidos": "López",
+        "horario_disponible": {"10:00 - 14:00": "Disponible", 
+                               "18:00 - 22:00": "Disponible"}
+    }
+  }

@@ -1,0 +1,77 @@
+{
+    "00001": {
+        "nombres": "Laura Andrea",
+        "apellidos": "González Mejía",
+        "direccion": "Calle 123, Ciudad XYZ",
+        "acudiente": "Mariana Rueda",
+        "telefono_celular": "1234567890",
+        "telefono_fijo": "0987654321",
+        "estado": "Graduado",
+        "riesgo": "Alto",
+        "pruebaIngreso": {
+            "nota_practica": 56.0,
+            "nota_teorica": 100.0,
+            "promedio": 78.0
+        }
+    },
+    "00002": {
+        "nombres": "Laura",
+        "apellidos": "Martínez",
+        "direccion": "Av. Principal, Pueblo ABC",
+        "acudiente": "Juan Martínez",
+        "telefono_celular": "0987654321",
+        "telefono_fijo": "1234567890",
+        "estado": "Inscrito",
+        "riesgo": "",
+        "pruebaIngreso": {
+            "nota_practica": 80,
+            "nota_teorica": 75,
+            "promedio": 67.0
+        }
+    },
+    "00003": {
+        "nombres": "Carlos",
+        "apellidos": "López",
+        "direccion": "Carrera 45, Barrio DEF",
+        "acudiente": "Ana López",
+        "telefono_celular": "555444333",
+        "telefono_fijo": "666777888",
+        "estado": "Cursando",
+        "riesgo": "Alto",
+        "pruebaIngreso": {
+            "nota_practica": 70,
+            "nota_teorica": 65,
+            "promedio": 67.5
+        }
+    },
+    "00004": {
+        "nombres": "Sofía",
+        "apellidos": "Pérez",
+        "direccion": "Calle 67, Urbanización GHI",
+        "acudiente": "Pedro Pérez",
+        "telefono_celular": "777888999",
+        "telefono_fijo": "111222333",
+        "estado": "Expulsado",
+        "riesgo": "",
+        "pruebaIngreso": {
+            "nota_practica": 90,
+            "nota_teorica": 85,
+            "promedio": 87.5
+        }
+    },
+    "00005": {
+        "nombres": "María",
+        "apellidos": "González Mejía",
+        "direccion": "Av. Principal, Ciudad JKL",
+        "acudiente": "Luis Gómez",
+        "telefono_celular": "999888777",
+        "telefono_fijo": "444555666",
+        "estado": "Expulsado",
+        "riesgo": "Alto",
+        "pruebaIngreso": {
+            "nota_practica": 75,
+            "nota_teorica": 70,
+            "promedio": 72.5
+        }
+    }
+}

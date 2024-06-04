@@ -1,0 +1,42 @@
+{
+    "12345": {
+      "ruta": "Ruta NodeJS",
+      "modulos": {
+        "Fundamentos de programación": {
+          "quices_trabajos": 80,
+          "prueba_teorica": 70,
+          "prueba_practica": 90,
+          "promedio": 84,
+          "advertencias": []
+        },
+        "Programación Web": {
+          "quices_trabajos": 75,
+          "prueba_teorica": 65,
+          "prueba_practica": 85,
+          "promedio": 77,
+          "advertencias": []
+        },
+        "Programación formal": {
+          "quices_trabajos": 85,
+          "prueba_teorica": 80,
+          "prueba_practica": 95,
+          "promedio": 87,
+          "advertencias": []
+        },
+        "Bases de datos": {
+          "quices_trabajos": 70,
+          "prueba_teorica": 60,
+          "prueba_practica": 80,
+          "promedio": 74,
+          "advertencias": []
+        },
+        "Backend": {
+          "quices_trabajos": 90,
+          "prueba_teorica": 85,
+          "prueba_practica": 95,
+          "promedio": 91,
+          "advertencias": []
+        }
+      }
+  }
+}
