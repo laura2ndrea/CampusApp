@@ -7,6 +7,7 @@
           "prueba_teorica": 70,
           "prueba_practica": 90,
           "promedio": 84,
+          "estado": "Aprobado",
           "advertencias": []
         },
         "Programación Web": {
@@ -14,6 +15,7 @@
           "prueba_teorica": 65,
           "prueba_practica": 85,
           "promedio": 77,
+          "estado": "Aprobado",
           "advertencias": []
         },
         "Programación formal": {
@@ -21,6 +23,7 @@
           "prueba_teorica": 80,
           "prueba_practica": 95,
           "promedio": 87,
+          "estado": "Aprobado",
           "advertencias": []
         },
         "Bases de datos": {
@@ -28,6 +31,7 @@
           "prueba_teorica": 60,
           "prueba_practica": 80,
           "promedio": 74,
+          "estado": "Aprobado",
           "advertencias": []
         },
         "Backend": {
@@ -35,6 +39,7 @@
           "prueba_teorica": 85,
           "prueba_practica": 95,
           "promedio": 91,
+          "estado": "Aprobado",
           "advertencias": []
         }
       }
