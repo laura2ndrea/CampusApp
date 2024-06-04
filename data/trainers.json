@@ -2,37 +2,43 @@
     "000001": {
       "nombres": "Pedro Jaimes",
       "apellidos": "Gómez Mejía",
-      "horario_disponible": {"06:00 - 10:00": "Disponible", 
+      "password": "pass1",
+      "horario_disponible": {"06:00 - 10:00": "No disponible", 
                              "14:00 - 18:00": "Disponible"}
     },
     "000002": {
       "nombres": "María Juana",
       "apellidos": "Martínez Dominguez",
-      "horario_disponible": {"10:00 - 14:00": "Disponible", 
+      "password": "pass2",
+      "horario_disponible": {"10:00 - 14:00": "No disponible", 
                              "18:00 - 22:00": "Disponible"}
     },
     "000003": {
       "nombres": "Ana Laura",
       "apellidos": "López Gonzalez",
-      "horario_disponible": {"06:00 - 10:00": "Disponible", 
+      "password": "pass3",
+      "horario_disponible": {"06:00 - 10:00": "No disponible", 
                              "14:00 - 18:00": "Disponible"}
     },
     "000004": {
       "nombres": "Juan",
       "apellidos": "Rodríguez",
-      "horario_disponible": {"10:00 - 14:00": "Disponible", 
+      "password": "pass4",
+      "horario_disponible": {"10:00 - 14:00": "No disponible", 
                              "18:00 - 22:00": "Disponible"}
     },
     "000005": {
         "nombres": "Ana Maria",
         "apellidos": "López Palmares",
-        "horario_disponible": {"06:00 - 10:00": "Disponible", 
+        "password": "pass5",
+        "horario_disponible": {"06:00 - 10:00": "No disponible", 
                                "14:00 - 18:00": "Disponible"}
     },
       "000006": {
         "nombres": "Ana",
         "apellidos": "López",
-        "horario_disponible": {"10:00 - 14:00": "Disponible", 
+        "password": "pass6",
+        "horario_disponible": {"10:00 - 14:00": "No disponible", 
                                "18:00 - 22:00": "Disponible"}
     }
   }
