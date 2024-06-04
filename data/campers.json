@@ -1,5 +1,5 @@
 {
-    "00001": {
+    "123456": {
         "nombres": "Laura Andrea",
         "apellidos": "González Mejía",
         "direccion": "Calle 123, Ciudad XYZ",
@@ -14,8 +14,8 @@
             "promedio": 78.0
         }
     },
-    "00002": {
-        "nombres": "Laura",
+    "234567": {
+        "nombres": "Paola Maria",
         "apellidos": "Martínez",
         "direccion": "Av. Principal, Pueblo ABC",
         "acudiente": "Juan Martínez",
@@ -29,8 +29,8 @@
             "promedio": 67.0
         }
     },
-    "00003": {
-        "nombres": "Carlos",
+    "345678": {
+        "nombres": "Carlos Andres",
         "apellidos": "López",
         "direccion": "Carrera 45, Barrio DEF",
         "acudiente": "Ana López",
@@ -44,23 +44,23 @@
             "promedio": 67.5
         }
     },
-    "00004": {
-        "nombres": "Sofía",
+    "456789": {
+        "nombres": "Ana Sofía",
         "apellidos": "Pérez",
         "direccion": "Calle 67, Urbanización GHI",
         "acudiente": "Pedro Pérez",
         "telefono_celular": "777888999",
         "telefono_fijo": "111222333",
         "estado": "Expulsado",
-        "riesgo": "",
+        "riesgo": "Alto",
         "pruebaIngreso": {
             "nota_practica": 90,
             "nota_teorica": 85,
             "promedio": 87.5
         }
     },
-    "00005": {
-        "nombres": "María",
+    "567890": {
+        "nombres": "María José",
         "apellidos": "González Mejía",
         "direccion": "Av. Principal, Ciudad JKL",
         "acudiente": "Luis Gómez",
