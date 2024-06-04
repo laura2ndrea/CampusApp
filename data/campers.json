@@ -6,7 +6,7 @@
         "acudiente": "Mariana Rueda",
         "telefono_celular": "1234567890",
         "telefono_fijo": "0987654321",
-        "estado": "Graduado",
+        "estado": "Cursando",
         "riesgo": "Alto",
         "pruebaIngreso": {
             "nota_practica": 56.0,
@@ -21,7 +21,7 @@
         "acudiente": "Juan Martínez",
         "telefono_celular": "0987654321",
         "telefono_fijo": "1234567890",
-        "estado": "Inscrito",
+        "estado": "Cursando",
         "riesgo": "",
         "pruebaIngreso": {
             "nota_practica": 80,
@@ -51,7 +51,7 @@
         "acudiente": "Pedro Pérez",
         "telefono_celular": "777888999",
         "telefono_fijo": "111222333",
-        "estado": "Expulsado",
+        "estado": "Cursando",
         "riesgo": "Alto",
         "pruebaIngreso": {
             "nota_practica": 90,

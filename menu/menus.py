@@ -1,5 +1,6 @@
 import menu.opciones as menuOpciones
 import data.datos as dataOpciones
+import gestion.matriculas as matriculasOpciones
 
 def menu_principal():
      while True: 
@@ -19,27 +20,25 @@ def menu_principal():
             print ("Valor invalido, por favor ingrese una opcion nuevamente")
 
 def menu_coordinador(): 
+    if not ingreso_coordinador():
+        return
     while True: 
         menuOpciones.separador()
-        ingreso = ingreso_coordinador()
-        if ingreso == True: 
-            print("Bienvenido coordinador, por favor seleccione una opción: ")
-            opcion = menuOpciones.recorrer_opciones(menuOpciones.opc_coordinacion)
-            if opcion == "1": 
-                menu_gestionMatricula()
-            elif opcion == "2": 
-                menu_gestionReportes()
-            elif opcion == "3": 
-                menu_gestionRutas()
-            elif opcion == "4": 
-                menu_gestionCampers()
-            elif opcion == "5": 
-                print("Saliendo ...")
-                break
-            else: 
-                print ("Valor invalido, por favor ingrese una opcion nuevamente")
-        else: 
+        print("Bienvenido coordinador, por favor seleccione una opción: ")
+        opcion = menuOpciones.recorrer_opciones(menuOpciones.opc_coordinacion)
+        if opcion == "1": 
+            menu_gestionMatricula()
+        elif opcion == "2": 
+            menu_gestionReportes()
+        elif opcion == "3": 
+            menu_gestionRutas()
+        elif opcion == "4": 
+            menu_gestionCampers()
+        elif opcion == "5": 
+            print("Saliendo ...")
             break
+        else: 
+            print ("Valor invalido, por favor ingrese una opcion nuevamente")
 
 def menu_trainer(): 
     while True: 
@@ -86,7 +85,7 @@ def menu_gestionMatricula():
         print("Por favor seleccione una opción: ")
         opcion = menuOpciones.recorrer_opciones(menuOpciones.opc_gestionMatricula)
         if opcion == "1": 
-           print("En construccion")
+           matriculasOpciones.asignarCamper_ruta()
         elif opcion == "2": 
             print("trainers")
         elif opcion == "3": 
