@@ -51,7 +51,7 @@
         "acudiente": "Pedro Pérez",
         "telefono_celular": "777888999",
         "telefono_fijo": "111222333",
-        "estado": "Cursando",
+        "estado": "Aprobado",
         "riesgo": "Alto",
         "pruebaIngreso": {
             "nota_practica": 90,
@@ -66,7 +66,7 @@
         "acudiente": "Luis Gómez",
         "telefono_celular": "999888777",
         "telefono_fijo": "444555666",
-        "estado": "Expulsado",
+        "estado": "Inscrito",
         "riesgo": "Alto",
         "pruebaIngreso": {
             "nota_practica": 75,

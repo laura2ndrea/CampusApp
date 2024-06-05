@@ -1,6 +1,8 @@
 import menu.opciones as menuOpciones
 import data.datos as dataOpciones
 import gestion.matriculas as matriculasOpciones
+import gestion.campers as campersOpciones
+import gestion.trainers as trainersOpciones
 
 def menu_principal():
      while True: 
@@ -104,13 +106,13 @@ def menu_gestionReportes():
         print("Por favor seleccione una opción: ")
         opcion = menuOpciones.recorrer_opciones(menuOpciones.opc_gestionReportes)
         if opcion == "1": 
-           print("En construccion")
+            campersOpciones.mostrar_campers("Inscrito")
         elif opcion == "2": 
-            print("trainers")
+            campersOpciones.mostrar_campers("Aprobado")
         elif opcion == "3": 
-            print ("campers")
+            trainersOpciones.mostrar_trainers()
         elif opcion == "4": 
-            print ("En construcción ...")
+            campersOpciones.campers_bajoRendimiento()
         elif opcion == "5": 
             print ("En construcción ...")
         elif opcion == "6": 
