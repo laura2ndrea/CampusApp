@@ -117,7 +117,7 @@ def menu_gestionReportes():
         elif opcion == "5": 
             rutasOpciones.trainers_campers_grupo()
         elif opcion == "6": 
-            print ("En construcción ...")
+            rutasOpciones.notas_modulos()
         elif opcion == "7": 
             print("Saliendo ...")
             break
@@ -130,11 +130,11 @@ def menu_gestionRutas():
         print("Por favor seleccione una opción: ")
         opcion = menuOpciones.recorrer_opciones(menuOpciones.opc_gestionRutas)
         if opcion == "1": 
-           print("En construccion")
+           rutasOpciones.mostrar_rutas()
         elif opcion == "2": 
-            print("trainers")
+            rutasOpciones.crear_ruta()
         elif opcion == "3": 
-            print ("campers")
+            rutasOpciones.crear_grupo()
         elif opcion == "4": 
             print("Saliendo ...")
             break

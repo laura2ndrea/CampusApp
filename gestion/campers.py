@@ -83,3 +83,29 @@ def camper_crearNotas(doc, ruta):
     }
 
     dataOpciones.guardar_datos("data/notas.json", notas)
+
+def crear_camper(): 
+    campers = dataOpciones.cargar_datos("data\campers.json")
+    camper = {}
+
+    doc = input("Ingrese el documento del nuevo camper: ").strip()
+    if doc in campers:
+        print("Error, el documento ya se encuentra registrado.")
+        return
+    
+    camper["nombres"] = input("Ingrese nombres: ").strip()
+    camper["apellidos"] = input("Ingrese apellidos: ").strip()
+    camper["direccion"] = input("Ingrese la direccion: ").strip()
+    camper["acudiente"] = input("Ingrese el nombre del acudiente: ").strip()
+    camper["telefono_celular"] = input("Ingrese teléfono celular: ").strip()
+    camper["telefono_fijo"] = input("Ingrese teléfono fijo: ").strip()
+    camper["estado"] = "Inscrito"
+    camper["riesgo"] = ""
+    camper["pruebaIngreso"] = {
+        "nota_practica": 0,
+        "nota_teorica": 0,
+        "promedio": 0
+    }
+    
+    campers[doc] = camper
+    dataOpciones.guardar_datos("data\campers.json", campers)

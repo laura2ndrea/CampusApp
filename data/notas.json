@@ -52,7 +52,7 @@
                 "prueba_teorica": 0,
                 "prueba_practica": 0,
                 "promedio": 0,
-                "estado": "",
+                "estado": "No aprobado",
                 "advertencias": []
             },
             "Programación Web": {

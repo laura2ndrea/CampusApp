@@ -27,10 +27,7 @@
             "U1": {
                 "trainer_id": "000001",
                 "campers_ids": [
-                    "00002",
-                    "00003",
                     "123456",
-                    "456789",
                     "234567"
                 ],
                 "fecha_inicio": "",
@@ -150,6 +147,39 @@
                 "salon_entrenamiento": "",
                 "horario": "10:00 - 14:00",
                 "cantidad_campers": 2
+            }
+        }
+    },
+    "Ruta Python": {
+        "modulos": {
+            "Fundamentos de programación": [
+                "Algoritmos",
+                "Pseint"
+            ],
+            "Programación Web": [
+                "HTML",
+                "CSS"
+            ],
+            "Programación formal": [
+                "Python"
+            ],
+            "Bases de datos": {
+                "sgdb_principal": "Mongo",
+                "sgdb_alternativo": "SQL"
+            },
+            "Backend": [
+                "Node"
+            ]
+        },
+        "grupos": {
+            "A1": {
+                "trainer_id": "",
+                "campers_ids": [],
+                "fecha_inicio": "",
+                "fecha_fin": "",
+                "salon_entrenamiento": "",
+                "horario": "",
+                "cantidad_campers": 0
             }
         }
     }
