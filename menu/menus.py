@@ -43,27 +43,31 @@ def menu_coordinador():
         else: 
             print ("Valor invalido, por favor ingrese una opcion nuevamente")
 
-def menu_trainer(): 
-    while True: 
-        menuOpciones.separador()
-        ingreso = ingreso_trainer()
-        if ingreso == True: 
-            opcion = menuOpciones.recorrer_opciones(menuOpciones.opc_trainers)
-            if opcion == "1": 
-                print("En construccion")
-            elif opcion == "2": 
-                print("trainers")
-            elif opcion == "3": 
-                print ("campers")
-            elif opcion == "4": 
-                print("Saliendo ...")
-                break
-            else: 
-                print ("Valor invalido, por favor ingrese una opcion nuevamente")
-        else: 
-            break
+def menu_trainer():
+    primer_ingreso = True
+    doc_trainer = None
 
-def menu_camper(): 
+    if primer_ingreso or ingreso_exitoso:
+            ingreso_exitoso, doc_trainer = ingreso_trainer()
+            primer_ingreso = False
+
+    while True:
+        menuOpciones.separador()
+        opcion = menuOpciones.recorrer_opciones(menuOpciones.opc_trainers)
+        if opcion == "1": 
+            trainersOpciones.mostrarInformacion_trainer(doc_trainer)
+        elif opcion == "2": 
+            trainersOpciones.verRutas_trainers(doc_trainer)
+        elif opcion == "3": 
+            trainersOpciones.ingresarNotas_camper(doc_trainer)
+        elif opcion == "4": 
+            print("Saliendo ...")
+            break
+        else: 
+            print ("Valor invalido, por favor ingrese una opcion nuevamente")
+
+def menu_camper():
+    doc = input("Ingrese su documento: ").strip() 
     while True: 
         menuOpciones.separador()
         print("Bienvenido camper, por favor seleccione una opción: ")
@@ -181,7 +185,7 @@ def ingreso_trainer():
 
     if doc in trainers and password == trainers[doc]["password"]:
         print(f"Contraseña correcta.\n Bienvenido, {trainers[doc]['nombres']} {trainers[doc]['apellidos']}.")
-        return True
+        return True, doc
     else:
         print("Contraseña o documento incorrecto")
-        return False
+        return False, None

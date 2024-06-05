@@ -3,11 +3,11 @@
         "ruta": "Ruta NodeJS",
         "modulos": {
             "Fundamentos de programación": {
-                "quices_trabajos": 80,
-                "prueba_teorica": 70,
-                "prueba_practica": 90,
-                "promedio": 84,
-                "estado": "Aprobado",
+                "quices_trabajos": 45.0,
+                "prueba_teorica": 35.0,
+                "prueba_practica": 67.0,
+                "promedio": 55.199999999999996,
+                "estado": "No aprobado",
                 "advertencias": []
             },
             "Programación Web": {
@@ -82,11 +82,11 @@
                 "advertencias": []
             },
             "Backend": {
-                "quices_trabajos": 0,
-                "prueba_teorica": 0,
-                "prueba_practica": 0,
-                "promedio": 0,
-                "estado": "",
+                "quices_trabajos": 34.0,
+                "prueba_teorica": 89.0,
+                "prueba_practica": 100.0,
+                "promedio": 90.1,
+                "estado": "Aprobado",
                 "advertencias": []
             }
         }
