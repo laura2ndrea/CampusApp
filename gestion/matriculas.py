@@ -33,6 +33,7 @@ def asignarCamper_ruta():
         except IndexError as ie:
             print(f"Error: {ie}")
     
+    # Filtro grupos disponibles en la ruta seleccionada 
     grupos_disponibles = {grupo: datos for grupo, datos in rutas[ruta_seleccionada]['grupos'].items() if datos['cantidad_campers'] < 33}
     
     if not grupos_disponibles:
@@ -44,7 +45,7 @@ def asignarCamper_ruta():
         print(f"{grupo} - {datos['cantidad_campers']} inscritos")
     
     while True:
-        grupo_seleccionado = input("Ingrese el grupo en el que desea inscribir al camper: ").strip().capitalize()
+        grupo_seleccionado = input("Ingrese el grupo en el que desea inscribir al camper: ").strip().upper()
         if grupo_seleccionado in grupos_disponibles:
             break
         else:

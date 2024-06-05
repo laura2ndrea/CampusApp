@@ -90,5 +90,50 @@
                 "advertencias": []
             }
         }
+    },
+    "678912": {
+        "ruta": "Ruta NetCore",
+        "modulos": {
+            "Fundamentos de programación": {
+                "quices_trabajos": 0,
+                "prueba_teorica": 0,
+                "prueba_practica": 0,
+                "promedio": 0,
+                "estado": "",
+                "advertencias": []
+            },
+            "Programación Web": {
+                "quices_trabajos": 0,
+                "prueba_teorica": 0,
+                "prueba_practica": 0,
+                "promedio": 0,
+                "estado": "",
+                "advertencias": []
+            },
+            "Programación formal": {
+                "quices_trabajos": 0,
+                "prueba_teorica": 0,
+                "prueba_practica": 0,
+                "promedio": 0,
+                "estado": "",
+                "advertencias": []
+            },
+            "Bases de datos": {
+                "quices_trabajos": 0,
+                "prueba_teorica": 0,
+                "prueba_practica": 0,
+                "promedio": 0,
+                "estado": "",
+                "advertencias": []
+            },
+            "Backend": {
+                "quices_trabajos": 0,
+                "prueba_teorica": 0,
+                "prueba_practica": 0,
+                "promedio": 0,
+                "estado": "",
+                "advertencias": []
+            }
+        }
     }
 }

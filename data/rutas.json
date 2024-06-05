@@ -131,13 +131,14 @@
                 "campers_ids": [
                     "00011",
                     "00012",
-                    "00013"
+                    "00013",
+                    "678912"
                 ],
                 "fecha_inicio": "",
                 "fecha_fin": "",
                 "salon_entrenamiento": "",
                 "horario": "06:00 - 10:00",
-                "cantidad_campers": 4
+                "cantidad_campers": 5
             },
             "G9": {
                 "trainer_id": "000006",
