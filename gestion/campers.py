@@ -282,3 +282,53 @@ def crear_advertencias():
     dataOpciones.guardar_datos("data/notas.json", notas)
     
     print("¡Advertencia agregada exitosamente!")
+
+def monstrarInformacion_camper(doc): 
+    campers = dataOpciones.cargar_datos("data/campers.json")
+
+    if doc in campers:
+        camper = campers[doc]
+        print("Información del Camper:")
+        print(f"Documento: {doc}")
+        print(f"Nombres: {camper['nombres']}")
+        print(f"Apellidos: {camper['apellidos']}")
+        print(f"Dirección: {camper['direccion']}")
+        print(f"Nombre del Acudiente: {camper['acudiente']}")
+        print(f"Télefono Celular: {camper['telefono_celular']}")
+        print(f"Télefono Fijo: {camper['telefono_fijo']}")
+        print(f"Estado: {camper['estado']}")
+        print(f"Riesgo: {camper['riesgo']}")
+
+def mostrarRuta_camper(doc): 
+    rutas = dataOpciones.cargar_datos("data/rutas.json")
+    for ruta, info_ruta in rutas.items():
+        grupos = info_ruta.get("grupos", {})
+        for grupo, info_grupo in grupos.items():
+            if doc in info_grupo.get("campers_ids", []):
+                horario = info_grupo.get("horario", "No definido")
+                salon = info_grupo.get("salon", "No definido")
+                print(f"El camper con documento {doc} pertenece a la ruta: {ruta}")
+                print(f"Grupo: {grupo}")
+                print(f"Horario del grupo: {horario}")
+                print(f"Salón del grupo: {salon}")
+                return
+    print(f"No se encontró al camper con documento {doc} en ninguna ruta.")
+
+def mostrarNotas_camper(doc): 
+    notas = dataOpciones.cargar_datos("data/notas.json")
+    if doc in notas:
+        notas_camper = notas[doc]
+        print(f"Notas del Camper con documento {doc}:")
+        for modulo, info_modulo in notas_camper['modulos'].items():
+            print(f"\nMódulo: {modulo}")
+            print(f" - Quices y trabajos: {info_modulo['quices_trabajos']}")
+            print(f" - Prueba teórica: {info_modulo['prueba_teorica']}")
+            print(f" - Prueba práctica: {info_modulo['prueba_practica']}")
+            print(f" - Promedio: {info_modulo['promedio']}")
+            print(f" - Estado: {info_modulo['estado']}")
+            if info_modulo['advertencias']:
+                print(f" - Advertencias: {', '.join(info_modulo['advertencias'])}")
+            else:
+                print(" - Advertencias: Ninguna")
+    else:
+        print(f"No se encontraron notas para el Camper con documento {doc}.")

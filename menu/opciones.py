@@ -12,7 +12,7 @@ opc_gestionCampers = ("1. Inscripción de nuevo camper", "2. Actualizar informac
 
 opc_trainers = ("1. Mostrar información personal", "2. Mostrar rutas asignadas", "3. Ingresar notas", "4. Salir del menú")
 
-opc_campers = ("1. Mostrar información personal", "2. Mostrar información de ruta asignada", "3. Mostrar notas", "4. Mostrar advertencias", "5. Salir del menú")
+opc_campers = ("1. Mostrar información personal", "2. Mostrar información de ruta asignada", "3. Mostrar notas", "4. Salir del menú")
 
 def recorrer_opciones(opciones): 
     for i in opciones:

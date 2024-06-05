@@ -68,23 +68,24 @@ def menu_trainer():
 
 def menu_camper():
     doc = input("Ingrese su documento: ").strip() 
-    while True: 
-        menuOpciones.separador()
-        print("Bienvenido camper, por favor seleccione una opción: ")
-        opcion = menuOpciones.recorrer_opciones(menuOpciones.opc_campers)
-        if opcion == "1": 
-           print("En construccion")
-        elif opcion == "2": 
-            print("trainers")
-        elif opcion == "3": 
-            print ("campers")
-        elif opcion == "4": 
-            print ("En construcción ...")
-        elif opcion == "5": 
-            print("Saliendo ...")
-            break
-        else: 
-            print ("Valor invalido, por favor ingrese una opcion nuevamente")
+    if ingreso_camper(doc):
+        while True: 
+            menuOpciones.separador()
+            print("Bienvenido camper, por favor seleccione una opción: ")
+            opcion = menuOpciones.recorrer_opciones(menuOpciones.opc_campers)
+            if opcion == "1": 
+                campersOpciones.monstrarInformacion_camper(doc)
+            elif opcion == "2": 
+                campersOpciones.mostrarRuta_camper(doc)
+            elif opcion == "3": 
+                campersOpciones.mostrarNotas_camper(doc)
+            elif opcion == "4": 
+                print("Saliendo ...")
+                break
+            else: 
+                print ("Valor invalido, por favor ingrese una opcion nuevamente")
+    else: 
+        print("Ese documento no se encuentra registrado")
 
 def menu_gestionMatricula(): 
     while True: 
@@ -189,3 +190,10 @@ def ingreso_trainer():
     else:
         print("Contraseña o documento incorrecto")
         return False, None
+    
+def ingreso_camper(doc): 
+    campers = dataOpciones.cargar_datos("data/campers.json")
+    if doc in campers:
+        return True
+    else:
+        return False
