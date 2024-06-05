@@ -14,7 +14,7 @@
         "password": "pass2",
         "horario_disponible": {
             "10:00 - 14:00": "No disponible",
-            "18:00 - 22:00": "Disponible"
+            "18:00 - 22:00": "No disponible"
         }
     },
     "000003": {
@@ -50,7 +50,7 @@
         "password": "pass6",
         "horario_disponible": {
             "10:00 - 14:00": "No disponible",
-            "18:00 - 22:00": "Disponible"
+            "18:00 - 22:00": "No disponible"
         }
     }
 }

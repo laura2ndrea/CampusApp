@@ -34,20 +34,17 @@
                 "fecha_fin": "",
                 "salon_entrenamiento": "",
                 "horario": "14:00 - 18:00",
-                "cantidad_campers": 6,
+                "cantidad_campers": 2,
                 "salon": "Artemis"
             },
             "G5": {
                 "trainer_id": "000002",
-                "campers_ids": [
-                    "00004",
-                    "00005"
-                ],
+                "campers_ids": [],
                 "fecha_inicio": "25-12-2024",
                 "fecha_fin": "25-12-2025",
                 "salon_entrenamiento": "",
                 "horario": "10:00 - 14:00",
-                "cantidad_campers": 2
+                "cantidad_campers": 0
             }
         }
     },
@@ -76,29 +73,22 @@
         },
         "grupos": {
             "J1": {
-                "trainer_id": "",
-                "campers_ids": [
-                    "00006",
-                    "00007",
-                    "00008"
-                ],
+                "trainer_id": "000006",
+                "campers_ids": [],
                 "fecha_inicio": "",
                 "fecha_fin": "",
                 "salon_entrenamiento": "",
-                "horario": "",
-                "cantidad_campers": 3
+                "horario": "18:00 - 22:00",
+                "cantidad_campers": 0
             },
             "G7": {
                 "trainer_id": "000004",
-                "campers_ids": [
-                    "00009",
-                    "00010"
-                ],
+                "campers_ids": [],
                 "fecha_inicio": "",
                 "fecha_fin": "",
                 "salon_entrenamiento": "",
                 "horario": "10:00 - 14:00",
-                "cantidad_campers": 2
+                "cantidad_campers": 0
             }
         }
     },
@@ -129,16 +119,13 @@
             "N1": {
                 "trainer_id": "000005",
                 "campers_ids": [
-                    "00011",
-                    "00012",
-                    "00013",
                     "678912"
                 ],
                 "fecha_inicio": "",
                 "fecha_fin": "",
                 "salon_entrenamiento": "",
                 "horario": "06:00 - 10:00",
-                "cantidad_campers": 5
+                "cantidad_campers": 1
             },
             "G9": {
                 "trainer_id": "000006",
@@ -147,7 +134,7 @@
                 "fecha_fin": "",
                 "salon_entrenamiento": "",
                 "horario": "10:00 - 14:00",
-                "cantidad_campers": 2
+                "cantidad_campers": 0
             }
         }
     },
@@ -174,12 +161,12 @@
         },
         "grupos": {
             "A1": {
-                "trainer_id": "",
+                "trainer_id": "000002",
                 "campers_ids": [],
                 "fecha_inicio": "",
                 "fecha_fin": "",
                 "salon_entrenamiento": "",
-                "horario": "",
+                "horario": "18:00 - 22:00",
                 "cantidad_campers": 0
             }
         }

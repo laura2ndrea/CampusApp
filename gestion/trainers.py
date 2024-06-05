@@ -118,6 +118,8 @@ def ingresarNotas_camper(doc):
         promedio = (quices_trabajos * 0.1) + (prueba_teorica * 0.3) + (prueba_practica * 0.6)
         if promedio >= 60:
             estado = "Aprobado"
+            campers[doc_camper]["riesgo"] = ""
+            
         else: 
             estado = "No aprobado"
             campers[doc_camper]["riesgo"] = "Alto"

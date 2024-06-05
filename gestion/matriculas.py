@@ -116,7 +116,7 @@ def asignarTrainer_ruta():
     while True:
         try:
             ruta_id = int(input("Seleccione una ruta (número): ")) 
-            if ruta_id < 0 or ruta_id >= len(rutas):
+            if ruta_id < 0 or ruta_id > len(rutas):
                 raise IndexError("El número seleccionado no corresponde a ninguna ruta.")
             break
         except (ValueError, IndexError):

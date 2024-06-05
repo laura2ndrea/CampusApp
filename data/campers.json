@@ -22,7 +22,7 @@
         "telefono_celular": "0987654321",
         "telefono_fijo": "1234567890",
         "estado": "Cursando",
-        "riesgo": "",
+        "riesgo": "Alto",
         "pruebaIngreso": {
             "nota_practica": 80,
             "nota_teorica": 75,
@@ -51,12 +51,12 @@
         "acudiente": "Pedro Pérez",
         "telefono_celular": "777888999",
         "telefono_fijo": "111222333",
-        "estado": "Aprobado",
-        "riesgo": "Alto",
+        "estado": "Inscrito",
+        "riesgo": "",
         "pruebaIngreso": {
-            "nota_practica": 90,
-            "nota_teorica": 85,
-            "promedio": 87.5
+            "nota_practica": 0,
+            "nota_teorica": 0,
+            "promedio": 0
         }
     },
     "567890": {
@@ -67,11 +67,11 @@
         "telefono_celular": "999888777",
         "telefono_fijo": "444555666",
         "estado": "Inscrito",
-        "riesgo": "Alto",
+        "riesgo": "",
         "pruebaIngreso": {
-            "nota_practica": 75,
-            "nota_teorica": 70,
-            "promedio": 72.5
+            "nota_practica": 0,
+            "nota_teorica": 0,
+            "promedio": 0
         }
     },
     "678912": {

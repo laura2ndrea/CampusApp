@@ -3,11 +3,11 @@
         "ruta": "Ruta NodeJS",
         "modulos": {
             "Fundamentos de programación": {
-                "quices_trabajos": 45.0,
-                "prueba_teorica": 35.0,
-                "prueba_practica": 67.0,
-                "promedio": 55.199999999999996,
-                "estado": "No aprobado",
+                "quices_trabajos": 100.0,
+                "prueba_teorica": 100.0,
+                "prueba_practica": 94.0,
+                "promedio": 96.4,
+                "estado": "Aprobado",
                 "advertencias": []
             },
             "Programación Web": {
@@ -50,35 +50,35 @@
         "ruta": "Ruta NodeJS",
         "modulos": {
             "Fundamentos de programación": {
-                "quices_trabajos": 0,
-                "prueba_teorica": 0,
-                "prueba_practica": 0,
-                "promedio": 0,
-                "estado": "No aprobado",
+                "quices_trabajos": 12.0,
+                "prueba_teorica": 45.0,
+                "prueba_practica": 100.0,
+                "promedio": 74.7,
+                "estado": "Aprobado",
                 "advertencias": []
             },
             "Programación Web": {
-                "quices_trabajos": 0,
-                "prueba_teorica": 0,
-                "prueba_practica": 0,
-                "promedio": 0,
-                "estado": "",
+                "quices_trabajos": 100.0,
+                "prueba_teorica": 100.0,
+                "prueba_practica": 0.0,
+                "promedio": 40.0,
+                "estado": "No aprobado",
                 "advertencias": []
             },
             "Programación formal": {
-                "quices_trabajos": 0,
-                "prueba_teorica": 0,
-                "prueba_practica": 0,
-                "promedio": 0,
-                "estado": "",
+                "quices_trabajos": 100.0,
+                "prueba_teorica": 98.0,
+                "prueba_practica": 98.0,
+                "promedio": 98.19999999999999,
+                "estado": "Aprobado",
                 "advertencias": []
             },
             "Bases de datos": {
-                "quices_trabajos": 0,
-                "prueba_teorica": 0,
-                "prueba_practica": 0,
-                "promedio": 0,
-                "estado": "",
+                "quices_trabajos": 32.0,
+                "prueba_teorica": 3.0,
+                "prueba_practica": 34.0,
+                "promedio": 24.5,
+                "estado": "No aprobado",
                 "advertencias": []
             },
             "Backend": {
