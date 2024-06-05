@@ -1,0 +1,26 @@
+{
+    "Artemis": {
+        "horarios": {
+            "06:00 - 10:00": "Disponible",
+            "10:00 - 14:00": "Disponible",
+            "14:00 - 18:00": "No disponible",
+            "18:00 - 22:00": "Disponible"
+        }
+    },
+    "Sputnik": {
+        "horarios": {
+            "06:00 - 10:00": "Disponible",
+            "10:00 - 14:00": "Disponible",
+            "14:00 - 18:00": "Disponible",
+            "18:00 - 22:00": "Disponible"
+        }
+    },
+    "Apolo": {
+        "horarios": {
+            "06:00 - 10:00": "Disponible",
+            "10:00 - 14:00": "Disponible",
+            "14:00 - 18:00": "Disponible",
+            "18:00 - 22:00": "Disponible"
+        }
+    }
+}

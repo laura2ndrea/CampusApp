@@ -1,5 +1,6 @@
 import data.datos as dataOpciones
 import menu.opciones as menuOpciones
+from datetime import datetime
 
 def asignarCamper_ruta():
     campers = dataOpciones.cargar_datos("data/campers.json")
@@ -143,3 +144,132 @@ def asignarTrainer_ruta():
     dataOpciones.guardar_datos('data/rutas.json', rutas)
 
     print(f"El trainer {trainer_info['nombres']} {trainer_info['apellidos']} asignado a la ruta {ruta_seleccionada}, grupo {grupo_seleccionado}, horario {horario_seleccionado}.")
+
+def validar_fecha(fecha_str):
+    try:
+        fecha = datetime.strptime(fecha_str, "%d-%m-%Y")
+        return fecha
+    except ValueError:
+        return None
+
+def asignarFechas_ruta(): 
+    rutas = dataOpciones.cargar_datos("data/rutas.json")
+
+    rutas_sin_fechas = {ruta_id: ruta_info for ruta_id, ruta_info in rutas.items() if any(
+        not grupo_info.get('fecha_inicio') or not grupo_info.get('fecha_fin') for grupo_info in ruta_info.get('grupos', {}).values()
+    )}
+
+    if not rutas_sin_fechas:
+        print("No hay rutas con cursos sin fechas asignadas.")
+        return
+
+    print("Rutas disponibles:")
+    for num, ruta_id in enumerate(rutas_sin_fechas.keys(), 1):
+        print(f"{num}. {ruta_id}")
+
+    while True:
+        try:
+            ruta_id = int(input("Seleccione una ruta (número): "))
+            if 1 <= ruta_id <= len(rutas_sin_fechas):
+                break
+            else:
+                print("Número de ruta fuera de rango.")
+        except ValueError:
+            print("Debe ingresar un número.")
+
+    ruta_seleccionada = list(rutas_sin_fechas.keys())[ruta_id - 1]
+    ruta_info = rutas_sin_fechas[ruta_seleccionada]
+
+    grupos_sin_fechas = {grupo: info for grupo, info in ruta_info.get('grupos', {}).items() if not info.get('fecha_inicio') or not info.get('fecha_fin')}
+
+    print("Grupos disponibles sin fechas:")
+    for grupo in grupos_sin_fechas:
+        print(f"- {grupo}")
+
+    while True:
+        grupo_seleccionado = input("Ingrese el grupo al que desea asignar fechas: ").strip().capitalize()
+        if grupo_seleccionado not in grupos_sin_fechas:
+            print("El grupo seleccionado no es válido. Intente nuevamente.")
+        else:
+            break
+
+    while True:
+        fecha_inicio_cadena = input("Ingrese la fecha de inicio (DD-MM-YYYY): ").strip()
+        fecha_inicio = validar_fecha(fecha_inicio_cadena)
+        if fecha_inicio:
+            break
+        else:
+            print("Fecha de inicio no válida. Intente nuevamente.")
+
+    while True:
+        fecha_fin_cadena = input("Ingrese la fecha de finalización (DD-MM-YYYY): ").strip()
+        fecha_fin = validar_fecha(fecha_fin_cadena)
+        if fecha_fin and fecha_fin > fecha_inicio:
+            break
+        else:
+            print("Fecha de finalización no válida o anterior a la fecha de inicio. Intente nuevamente.")
+
+    rutas[ruta_seleccionada]['grupos'][grupo_seleccionado]['fecha_inicio'] = fecha_inicio_cadena
+    rutas[ruta_seleccionada]['grupos'][grupo_seleccionado]['fecha_fin'] = fecha_fin_cadena
+
+    dataOpciones.guardar_datos("data/rutas.json", rutas)
+
+    print(f"Fechas asignadas correctamente al grupo {grupo_seleccionado} de la ruta {ruta_seleccionada}.")
+
+def asignarSalon_ruta(): 
+    # Se cargan los datos del JSON 
+    rutas = dataOpciones.cargar_datos("data/rutas.json")
+    salones = dataOpciones.cargar_datos("data/salones.json")
+
+    # Se muestran las rutas junto con los cursos que tengan un trainer asignado, pero no un salón 
+    print("Rutas y cursos con trainer asignado y sin salon:")
+    for ruta, info_ruta in rutas.items():
+        for grupo, info_grupo in info_ruta.get("grupos", {}).items():
+            if info_grupo.get("trainer_id") and not info_grupo.get("salon"):
+                print(f"- Ruta: {ruta}, Curso: {grupo}")
+
+    # Para seleccionar una ruta
+    ruta_seleccionada = input("Seleccione una ruta: ")
+    if ruta_seleccionada not in rutas:
+        print("Ruta no válida.")
+        return
+
+    # Para seleccionar un grupo 
+    grupo_seleccionado = input("Seleccione un grupo: ")
+    if grupo_seleccionado not in rutas[ruta_seleccionada].get("grupos", {}):
+        print("Grupo no válido.")
+        return
+
+    # Guardo el horario del curso y reviso si hay salones que tengan ese horario disponible 
+    horario_curso = rutas[ruta_seleccionada]["grupos"][grupo_seleccionado].get("horario")
+    salon_disponible = False
+    for salon, info_salon in salones.items():
+        if info_salon.get("horarios", {}).get(horario_curso) == "Disponible":
+            salon_disponible = True
+            break
+
+    if not salon_disponible:
+        print("No hay salones disponibles para el horario del curso seleccionado.")
+        return
+
+    # Se muestran los salones que disponibles en el horario del curso 
+    print(f"Salones disponibles para el horario del curso ({horario_curso}):")
+    for salon, info_salon in salones.items():
+        if info_salon.get("horarios", {}).get(horario_curso) == "Disponible":
+            print(salon)
+
+    # Selección de un salón 
+    salon_seleccionado = input("Seleccione un salón: ")
+    if salon_seleccionado not in salones:
+        print("Salón no válido.")
+        return
+
+    # Se asigna el salón al grupo y se cambia el estado en salones 
+    rutas[ruta_seleccionada]["grupos"][grupo_seleccionado]["salon"] = salon_seleccionado
+    salones[salon_seleccionado]["horarios"][horario_curso] = "No disponible"
+
+    # Para guardar los cambios en el JSON
+    dataOpciones.guardar_datos("data/rutas.json", rutas)
+    dataOpciones.guardar_datos("data/salones.json", salones)
+
+    print(f"Salón {salon_seleccionado} asignado al curso {grupo_seleccionado} en la ruta {ruta_seleccionada} en el horario {horario_curso}.")

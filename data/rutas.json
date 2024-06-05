@@ -32,9 +32,12 @@
                     "123456",
                     "456789"
                 ],
-                "salon_entrenamiento": "Sputnik",
+                "fecha_inicio": "",
+                "fecha_fin": "",
+                "salon_entrenamiento": "",
                 "horario": "14:00 - 18:00",
-                "cantidad_campers": 5
+                "cantidad_campers": 5,
+                "salon": "Artemis"
             },
             "G5": {
                 "trainer_id": "000002",
@@ -42,7 +45,9 @@
                     "00004",
                     "00005"
                 ],
-                "salon_entrenamiento": "Artemis",
+                "fecha_inicio": "25-12-2024",
+                "fecha_fin": "25-12-2025",
+                "salon_entrenamiento": "",
                 "horario": "10:00 - 14:00",
                 "cantidad_campers": 2
             }
@@ -79,7 +84,9 @@
                     "00007",
                     "00008"
                 ],
-                "salon_entrenamiento": "Apolo",
+                "fecha_inicio": "",
+                "fecha_fin": "",
+                "salon_entrenamiento": "",
                 "horario": "",
                 "cantidad_campers": 3
             },
@@ -89,7 +96,9 @@
                     "00009",
                     "00010"
                 ],
-                "salon_entrenamiento": "Sputnik",
+                "fecha_inicio": "",
+                "fecha_fin": "",
+                "salon_entrenamiento": "",
                 "horario": "10:00 - 14:00",
                 "cantidad_campers": 2
             }
@@ -127,7 +136,9 @@
                     "00013",
                     "234567"
                 ],
-                "salon_entrenamiento": "Artemis",
+                "fecha_inicio": "",
+                "fecha_fin": "",
+                "salon_entrenamiento": "",
                 "horario": "06:00 - 10:00",
                 "cantidad_campers": 4
             },
@@ -137,7 +148,9 @@
                     "00014",
                     "00015"
                 ],
-                "salon_entrenamiento": "Apolo",
+                "fecha_inicio": "",
+                "fecha_fin": "",
+                "salon_entrenamiento": "",
                 "horario": "10:00 - 14:00",
                 "cantidad_campers": 2
             }
