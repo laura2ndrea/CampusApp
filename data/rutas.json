@@ -170,5 +170,27 @@
                 "cantidad_campers": 0
             }
         }
+    },
+    "Ruta C++": {
+        "modulos": {
+            "Fundamentos de programación": [
+                "Algoritmos"
+            ],
+            "Programación Web": [
+                "HTML",
+                "CSS"
+            ],
+            "Programación formal": [
+                "C++"
+            ],
+            "Bases de datos": {
+                "sgdb_principal": "SQL",
+                "sgdb_alternativo": "Mongo"
+            },
+            "Backend": [
+                "Node"
+            ]
+        },
+        "grupos": {}
     }
 }
