@@ -6,7 +6,7 @@ def mostrar_campers(estado = None):
     campers = dataOpciones.cargar_datos("data\campers.json")
 
     if campers: 
-        print(f"Lista de campers con estado: {estado if estado else "Registrado"}:")
+        print(f"Lista de campers con estado: {estado if estado else 'Registrado'}:")
         # Se muestran los campers segun el estado
         for doc_camper, datos_camper in campers.items(): 
             if not estado or datos_camper.get("estado") == estado:

@@ -53,8 +53,8 @@ def verificar_pertenencia_camper(doc_trainer, doc_camper):
 
 def ingresarNotas_camper(doc): 
     # Cargar los datos desde el JSON 
-    rutas = dataOpciones.cargar_datos("data/rutas.json")
     notas = dataOpciones.cargar_datos("data/notas.json")
+    campers = dataOpciones.cargar_datos("data/campers.json")
 
     # Pedir el documento del camper al que se le quieren poner notas
     doc_camper = input("Ingrese el documento del camper: ").strip()
@@ -116,7 +116,13 @@ def ingresarNotas_camper(doc):
 
         # Se calcula el promedio y se cambia el estado
         promedio = (quices_trabajos * 0.1) + (prueba_teorica * 0.3) + (prueba_practica * 0.6)
-        estado = "Aprobado" if promedio >= 60 else "No aprobado"
+        if promedio >= 60:
+            estado = "Aprobado"
+        else: 
+            estado = "No aprobado"
+            campers[doc_camper]["riesgo"] = "Alto"
+            
+            
 
         # Actualizar las notas del camper
         camper_notas['modulos'][modulo_seleccionado] = {
@@ -130,6 +136,7 @@ def ingresarNotas_camper(doc):
 
         # Guardar los cambios en el archivo JSON
         dataOpciones.guardar_datos("data/notas.json", notas)
+        dataOpciones.guardar_datos("data/campers.json", campers)
 
         print("Notas ingresadas exitosamente.")
     else: 

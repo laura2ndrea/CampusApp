@@ -11,19 +11,19 @@
                 "advertencias": []
             },
             "Programación Web": {
-                "quices_trabajos": 75,
-                "prueba_teorica": 65,
-                "prueba_practica": 85,
-                "promedio": 77,
-                "estado": "Aprobado",
+                "quices_trabajos": 12.0,
+                "prueba_teorica": 7.0,
+                "prueba_practica": 35.0,
+                "promedio": 24.3,
+                "estado": "No aprobado",
                 "advertencias": []
             },
             "Programación formal": {
-                "quices_trabajos": 85,
-                "prueba_teorica": 80,
-                "prueba_practica": 95,
-                "promedio": 87,
-                "estado": "Aprobado",
+                "quices_trabajos": 0.0,
+                "prueba_teorica": 0.0,
+                "prueba_practica": 12.0,
+                "promedio": 7.199999999999999,
+                "estado": "No aprobado",
                 "advertencias": []
             },
             "Bases de datos": {
