@@ -87,7 +87,7 @@ def menu_gestionMatricula():
         if opcion == "1": 
            matriculasOpciones.asignarCamper_ruta()
         elif opcion == "2": 
-            print("trainers")
+            matriculasOpciones.asignarTrainer_ruta()
         elif opcion == "3": 
             print ("campers")
         elif opcion == "4": 

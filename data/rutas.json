@@ -33,7 +33,7 @@
                     "456789"
                 ],
                 "salon_entrenamiento": "Sputnik",
-                "horario": "06:00 - 10:00",
+                "horario": "14:00 - 18:00",
                 "cantidad_campers": 5
             },
             "G5": {
@@ -73,14 +73,14 @@
         },
         "grupos": {
             "J1": {
-                "trainer_id": "000003",
+                "trainer_id": "",
                 "campers_ids": [
                     "00006",
                     "00007",
                     "00008"
                 ],
                 "salon_entrenamiento": "Apolo",
-                "horario": "06:00 - 10:00",
+                "horario": "",
                 "cantidad_campers": 3
             },
             "G7": {
