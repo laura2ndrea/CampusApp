@@ -8,7 +8,7 @@ opc_gestionReportes = ("1. Mostrar campers inscritos", "2. Mostrar campers aprob
 
 opc_gestionRutas = ("1. Mostrar rutas de entrenamiento", "2. Crear nueva ruta de entrenamiento", "3. Crear nuevo grupo", "4. Salir del menú")
 
-opc_gestionCampers = ("1. Inscripción de nuevo camper", "2. Actualizar información de campers", "3. Ingresar notas de prueba de ingreso", "4. Crear advertencias para campers de alto riesgo", "5. Salir del menú")
+opc_gestionCampers = ("1. Inscripción de nuevo camper", "2. Actualizar información de campers", "3. Cambiar esto de camper", "4. Ingresar notas de prueba de ingreso", "5. Crear advertencias para campers de alto riesgo", "6. Salir del menú")
 
 opc_trainers = ("1. Mostrar información personal", "2. Mostrar rutas asignadas", "3. Ingresar notas", "4. Salir del menú")
 

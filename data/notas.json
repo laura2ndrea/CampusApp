@@ -32,7 +32,9 @@
                 "prueba_practica": 80,
                 "promedio": 74,
                 "estado": "Aprobado",
-                "advertencias": []
+                "advertencias": [
+                    "Debe aprobar o sera expulsado :("
+                ]
             },
             "Backend": {
                 "quices_trabajos": 90,

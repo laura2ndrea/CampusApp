@@ -147,14 +147,16 @@ def menu_gestionCampers():
         print("Por favor seleccione una opción: ")
         opcion = menuOpciones.recorrer_opciones(menuOpciones.opc_gestionCampers)
         if opcion == "1": 
-           print("En construccion")
+           campersOpciones.crear_camper()
         elif opcion == "2": 
-            print("trainers")
+            campersOpciones.actualizar_camper()
         elif opcion == "3": 
-            print ("campers")
+            campersOpciones.cambiar_estado()
         elif opcion == "4": 
-            print ("En construcción ...")
-        elif opcion == "5": 
+            campersOpciones.notas_prueba_ingreso()
+        elif opcion == "5":
+            campersOpciones.crear_advertencias()
+        elif opcion == "6": 
             print("Saliendo ...")
             break
         else: 
