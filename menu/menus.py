@@ -3,6 +3,7 @@ import data.datos as dataOpciones
 import gestion.matriculas as matriculasOpciones
 import gestion.campers as campersOpciones
 import gestion.trainers as trainersOpciones
+import gestion.rutas as rutasOpciones
 
 def menu_principal():
      while True: 
@@ -114,7 +115,7 @@ def menu_gestionReportes():
         elif opcion == "4": 
             campersOpciones.campers_bajoRendimiento()
         elif opcion == "5": 
-            print ("En construcción ...")
+            rutasOpciones.trainers_campers_grupo()
         elif opcion == "6": 
             print ("En construcción ...")
         elif opcion == "7": 

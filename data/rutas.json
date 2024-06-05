@@ -30,13 +30,14 @@
                     "00002",
                     "00003",
                     "123456",
-                    "456789"
+                    "456789",
+                    "234567"
                 ],
                 "fecha_inicio": "",
                 "fecha_fin": "",
                 "salon_entrenamiento": "",
                 "horario": "14:00 - 18:00",
-                "cantidad_campers": 5,
+                "cantidad_campers": 6,
                 "salon": "Artemis"
             },
             "G5": {
@@ -133,8 +134,7 @@
                 "campers_ids": [
                     "00011",
                     "00012",
-                    "00013",
-                    "234567"
+                    "00013"
                 ],
                 "fecha_inicio": "",
                 "fecha_fin": "",
@@ -144,10 +144,7 @@
             },
             "G9": {
                 "trainer_id": "000006",
-                "campers_ids": [
-                    "00014",
-                    "00015"
-                ],
+                "campers_ids": [],
                 "fecha_inicio": "",
                 "fecha_fin": "",
                 "salon_entrenamiento": "",

@@ -29,3 +29,57 @@ def campers_bajoRendimiento():
                 print(f"Documento: {doc_camper}")
                 for clave, valor in datos_camper.items():
                     print(f" - {clave.capitalize()}: {valor}")
+
+def camper_crearNotas(doc, ruta):
+    
+    notas = dataOpciones.cargar_datos("data/notas.json")
+
+    modulos = {
+        "Fundamentos de programación": {
+            "quices_trabajos": 0,
+            "prueba_teorica": 0,
+            "prueba_practica": 0,
+            "promedio": 0,
+            "estado": "",
+            "advertencias": []
+        },
+        "Programación Web": {
+            "quices_trabajos": 0,
+            "prueba_teorica": 0,
+            "prueba_practica": 0,
+            "promedio": 0,
+            "estado": "",
+            "advertencias": []
+        },
+        "Programación formal": {
+            "quices_trabajos": 0,
+            "prueba_teorica": 0,
+            "prueba_practica": 0,
+            "promedio": 0,
+            "estado": "",
+            "advertencias": []
+        },
+        "Bases de datos": {
+            "quices_trabajos": 0,
+            "prueba_teorica": 0,
+            "prueba_practica": 0,
+            "promedio": 0,
+            "estado": "",
+            "advertencias": []
+        },
+        "Backend": {
+            "quices_trabajos": 0,
+            "prueba_teorica": 0,
+            "prueba_practica": 0,
+            "promedio": 0,
+            "estado": "",
+            "advertencias": []
+        }
+    }
+
+    notas[doc] = {
+        "ruta": ruta,
+        "modulos": modulos
+    }
+
+    dataOpciones.guardar_datos("data/notas.json", notas)

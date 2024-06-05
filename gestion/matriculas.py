@@ -1,5 +1,6 @@
 import data.datos as dataOpciones
 import menu.opciones as menuOpciones
+import gestion.campers as campersOpciones
 from datetime import datetime
 
 def asignarCamper_ruta():
@@ -52,6 +53,8 @@ def asignarCamper_ruta():
     rutas[ruta_seleccionada]['grupos'][grupo_seleccionado]['campers_ids'].append(doc_camper)
     rutas[ruta_seleccionada]['grupos'][grupo_seleccionado]['cantidad_campers'] += 1
     campers[doc_camper]['estado'] = 'Cursando'
+
+    campersOpciones.camper_crearNotas(doc_camper, ruta_seleccionada)
     
     dataOpciones.guardar_datos("data/rutas.json", rutas)
     dataOpciones.guardar_datos("data/campers.json", campers)
