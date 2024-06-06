@@ -8,7 +8,9 @@
                 "prueba_practica": 94.0,
                 "promedio": 96.4,
                 "estado": "Aprobado",
-                "advertencias": []
+                "advertencias": [
+                    "No hay advertencias"
+                ]
             },
             "Programación Web": {
                 "quices_trabajos": 12.0,
@@ -93,6 +95,51 @@
     },
     "678912": {
         "ruta": "Ruta NetCore",
+        "modulos": {
+            "Fundamentos de programación": {
+                "quices_trabajos": 45.0,
+                "prueba_teorica": 78.0,
+                "prueba_practica": 12.0,
+                "promedio": 35.099999999999994,
+                "estado": "No aprobado",
+                "advertencias": []
+            },
+            "Programación Web": {
+                "quices_trabajos": 0,
+                "prueba_teorica": 0,
+                "prueba_practica": 0,
+                "promedio": 0,
+                "estado": "",
+                "advertencias": []
+            },
+            "Programación formal": {
+                "quices_trabajos": 0,
+                "prueba_teorica": 0,
+                "prueba_practica": 0,
+                "promedio": 0,
+                "estado": "",
+                "advertencias": []
+            },
+            "Bases de datos": {
+                "quices_trabajos": 0,
+                "prueba_teorica": 0,
+                "prueba_practica": 0,
+                "promedio": 0,
+                "estado": "",
+                "advertencias": []
+            },
+            "Backend": {
+                "quices_trabajos": 0,
+                "prueba_teorica": 0,
+                "prueba_practica": 0,
+                "promedio": 0,
+                "estado": "",
+                "advertencias": []
+            }
+        }
+    },
+    "11111111": {
+        "ruta": "Ruta Java",
         "modulos": {
             "Fundamentos de programación": {
                 "quices_trabajos": 0,

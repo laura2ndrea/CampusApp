@@ -36,7 +36,7 @@
         "acudiente": "Ana López",
         "telefono_celular": "555444333",
         "telefono_fijo": "666777888",
-        "estado": "Cursando",
+        "estado": "Aprobado",
         "riesgo": "Alto",
         "pruebaIngreso": {
             "nota_practica": 70,
@@ -66,12 +66,12 @@
         "acudiente": "Luis Gómez",
         "telefono_celular": "999888777",
         "telefono_fijo": "444555666",
-        "estado": "Inscrito",
+        "estado": "Aprobado",
         "riesgo": "",
         "pruebaIngreso": {
-            "nota_practica": 0,
-            "nota_teorica": 0,
-            "promedio": 0
+            "nota_practica": 45.0,
+            "nota_teorica": 100.0,
+            "promedio": 72.5
         }
     },
     "678912": {
@@ -82,7 +82,7 @@
         "telefono_celular": "31456789",
         "telefono_fijo": "2124332",
         "estado": "Cursando",
-        "riesgo": "",
+        "riesgo": "Alto",
         "pruebaIngreso": {
             "nota_practica": 45.0,
             "nota_teorica": 100.0,
@@ -93,15 +93,30 @@
         "nombres": "Laura Andrea",
         "apellidos": "Mejía",
         "direccion": "Calle 2",
-        "acudiente": "Luz Mejía",
+        "acudiente": "Lizardo Rodriguez",
         "telefono_celular": "2342344",
         "telefono_fijo": "342345",
-        "estado": "Retirado",
+        "estado": "Expulsado",
         "riesgo": "",
         "pruebaIngreso": {
             "nota_practica": 0,
             "nota_teorica": 0,
             "promedio": 0
+        }
+    },
+    "11111111": {
+        "nombres": "Emiliano",
+        "apellidos": "Perez Arrao",
+        "direccion": "Calle 2 - 55",
+        "acudiente": "Paola Arrao",
+        "telefono_celular": "3145678454",
+        "telefono_fijo": "2334567890",
+        "estado": "Cursando",
+        "riesgo": "",
+        "pruebaIngreso": {
+            "nota_practica": 89.0,
+            "nota_teorica": 63.0,
+            "promedio": 76.0
         }
     }
 }

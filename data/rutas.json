@@ -74,12 +74,14 @@
         "grupos": {
             "J1": {
                 "trainer_id": "000006",
-                "campers_ids": [],
+                "campers_ids": [
+                    "11111111"
+                ],
                 "fecha_inicio": "",
                 "fecha_fin": "",
                 "salon_entrenamiento": "",
                 "horario": "18:00 - 22:00",
-                "cantidad_campers": 0
+                "cantidad_campers": 1
             },
             "G7": {
                 "trainer_id": "000004",
@@ -121,11 +123,12 @@
                 "campers_ids": [
                     "678912"
                 ],
-                "fecha_inicio": "",
-                "fecha_fin": "",
+                "fecha_inicio": "23-12-2024",
+                "fecha_fin": "23-08-2025",
                 "salon_entrenamiento": "",
                 "horario": "06:00 - 10:00",
-                "cantidad_campers": 1
+                "cantidad_campers": 1,
+                "salon": "Apolo"
             },
             "G9": {
                 "trainer_id": "000006",
@@ -191,6 +194,16 @@
                 "Node"
             ]
         },
-        "grupos": {}
+        "grupos": {
+            "K5": {
+                "trainer_id": "000005",
+                "campers_ids": [],
+                "fecha_inicio": "",
+                "fecha_fin": "",
+                "salon_entrenamiento": "",
+                "horario": "14:00 - 18:00",
+                "cantidad_campers": 0
+            }
+        }
     }
 }

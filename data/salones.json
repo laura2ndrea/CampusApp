@@ -17,7 +17,7 @@
     },
     "Apolo": {
         "horarios": {
-            "06:00 - 10:00": "Disponible",
+            "06:00 - 10:00": "No disponible",
             "10:00 - 14:00": "Disponible",
             "14:00 - 18:00": "Disponible",
             "18:00 - 22:00": "Disponible"

@@ -41,7 +41,7 @@
         "password": "pass5",
         "horario_disponible": {
             "06:00 - 10:00": "No disponible",
-            "14:00 - 18:00": "Disponible"
+            "14:00 - 18:00": "No disponible"
         }
     },
     "000006": {

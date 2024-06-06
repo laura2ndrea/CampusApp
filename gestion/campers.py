@@ -3,7 +3,7 @@ import menu.opciones as menuOpciones
 
 def mostrar_campers(estado = None): 
     # Se cargan los datos desde el JSON
-    campers = dataOpciones.cargar_datos("data\campers.json")
+    campers = dataOpciones.cargar_datos("data/campers.json")
 
     if campers: 
         print(f"Lista de campers con estado: {estado if estado else 'Registrado'}:")
@@ -19,7 +19,7 @@ def mostrar_campers(estado = None):
 
 def campers_bajoRendimiento():
         # Se cargan los datos 
-        campers = dataOpciones.cargar_datos("data\campers.json")
+        campers = dataOpciones.cargar_datos("data/campers.json")
 
         print("Campers con bajo rendimiento:")
         # Recorrer e imprimir los campers que esten en riesgo alto (bajo rendimiento)
@@ -168,7 +168,7 @@ def crear_camper():
 
 def actualizar_camper(): 
     # Se cargan los datos desde el JSON 
-    campers = dataOpciones.cargar_datos("data\campers.json")
+    campers = dataOpciones.cargar_datos("data/campers.json")
     # Se solicita el documento del camper 
     doc = input("Ingrese el documento del camper: ").strip()
     # Verifica que el camper se encuentre registrado
@@ -189,7 +189,7 @@ def actualizar_camper():
     nuevo_valor = input(f"Ingrese el nuevo valor para '{campo_actualizar.capitalize()}': ").strip()
     campers[doc][campo_actualizar] = nuevo_valor
     # Se guardan los cambios en el JSON 
-    dataOpciones.guardar_datos("data\campers.json", campers)
+    dataOpciones.guardar_datos("data/campers.json", campers)
 
 def cambiar_estado():
     # Se cargan los datos desde el JSON 
