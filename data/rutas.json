@@ -133,8 +133,8 @@
             "G9": {
                 "trainer_id": "000006",
                 "campers_ids": [],
-                "fecha_inicio": "",
-                "fecha_fin": "",
+                "fecha_inicio": "23-01-2023",
+                "fecha_fin": "12-02-2024",
                 "salon_entrenamiento": "",
                 "horario": "10:00 - 14:00",
                 "cantidad_campers": 0

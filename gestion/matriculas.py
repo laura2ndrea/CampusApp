@@ -4,23 +4,24 @@ import gestion.campers as campersOpciones
 from datetime import datetime
 
 def asignarCamper_ruta():
+    # Se cargan los datos desde los JSON
     campers = dataOpciones.cargar_datos("data/campers.json")
     rutas = dataOpciones.cargar_datos("data/rutas.json")
-    
+    # Se verifica que el camper exista
     doc_camper = input("Ingrese el documento del camper: ").strip()
     
     if doc_camper not in campers:
         print("El documento ingresado no corresponde a ningún camper.")
         return
-
+    # Se verifica que el camper tengo como estado 'Aprobado', ya que son los unicos que pueden ser asignados a una ruta"
     if campers[doc_camper]['estado'] != 'Aprobado':
         print("El camper debe tener en su estado aprobado, para ser asignado a una ruta.")
         return
-    
+    # Se muestran las rutas disponibles 
     print("Rutas disponibles:")
     for idx, ruta in enumerate(rutas.keys(), 1):
         print(f"{idx}. {ruta}")
-    
+    # El usuario debe seleccionar una ruta, se verifica que elija una ruta disponible
     while True:
         try:
             ruta_idx = int(input("Seleccione una ruta (número): ")) - 1
@@ -35,28 +36,28 @@ def asignarCamper_ruta():
     
     # Filtro grupos disponibles en la ruta seleccionada 
     grupos_disponibles = {grupo: datos for grupo, datos in rutas[ruta_seleccionada]['grupos'].items() if datos['cantidad_campers'] < 33}
-    
+    # En caso de no haber grupos disponibles, se indica en un mensaje
     if not grupos_disponibles:
         print(f"Todos los cursos de la {ruta_seleccionada} están llenos.")
         return
-    
+    # En caso de haber grupos disponibles, se muestran junto con la cantidad de campers inscritos en el grupo 
     print(f"Grupos disponibles en {ruta_seleccionada}:")
     for grupo, datos in grupos_disponibles.items():
         print(f"{grupo} - {datos['cantidad_campers']} inscritos")
-    
+    # Se verifica que el usuario elija un grupo disponible
     while True:
         grupo_seleccionado = input("Ingrese el grupo en el que desea inscribir al camper: ").strip().upper()
         if grupo_seleccionado in grupos_disponibles:
             break
         else:
             print("El grupo seleccionado no es válido. Ingrese nuevamente el grupo.")
-
+    # Se agrega el documento del campers al grupo seleccionado y se aumenta la cantidad de campers inscritos en ese grupo, además se cambia el estado del camper a cursando
     rutas[ruta_seleccionada]['grupos'][grupo_seleccionado]['campers_ids'].append(doc_camper)
     rutas[ruta_seleccionada]['grupos'][grupo_seleccionado]['cantidad_campers'] += 1
     campers[doc_camper]['estado'] = 'Cursando'
-
+    # Adicionalmente se crea un diccionario en el JSON notas con el documento del estudiante en donde posteriormente el trainer podra ingresar las notas del camper
     campersOpciones.camper_crearNotas(doc_camper, ruta_seleccionada)
-    
+    # Se guardan los cambios en los respectivos JSON 
     dataOpciones.guardar_datos("data/rutas.json", rutas)
     dataOpciones.guardar_datos("data/campers.json", campers)
     
@@ -65,20 +66,19 @@ def asignarCamper_ruta():
 def asignarTrainer_ruta(): 
     trainers = dataOpciones.cargar_datos("data/trainers.json")
     rutas = dataOpciones.cargar_datos("data/rutas.json")
-
+    # Se crea un diccionario que muestre solo los trainers que tenga disponibilidad de horario 
     trainers_disponibles = {tr_doc: tr_info for tr_doc, tr_info in trainers.items() if any(disponibilidad == "Disponible" for disponibilidad in tr_info['horario_disponible'].values())}
 
     if not trainers_disponibles:
         print("No hay trainers disponibles en este momento.")
         return
-    
+    # Se muestran los trainers disponibles y permite que se seleccione uno (se verifica que se seleccione un trainer de los disponibles)
     trainers_list = list(trainers_disponibles.items())
     print("Trainers disponibles y horarios:")
     for docx, (trainer_doc, trainer_info) in enumerate(trainers_list, 1):
         print(f"{docx}. Documento: {trainer_doc}")
         print(f"   Nombre: {trainer_info['nombres']} {trainer_info['apellidos']}")
         menuOpciones.mini_separador()
-
     while True:
         try:
             trainer_docx = int(input("Seleccione un trainer (número): ")) 
@@ -91,7 +91,7 @@ def asignarTrainer_ruta():
 
     trainer_doc = trainers_list[trainer_docx - 1][0]
     trainer_info = trainers_list[trainer_docx - 1][1]
-
+    # Se crea una lista con los horarios que tiene disponible el trainer seleccionado y se verifica que el usuario seleccione un horario disponible
     horarios_disponibles = [horario for horario, disponibilidad in trainer_info['horario_disponible'].items() if disponibilidad == "Disponible"]
     print("Horarios disponibles para el trainer seleccionado:")
     for num, horario in enumerate(horarios_disponibles, 1):
@@ -108,7 +108,7 @@ def asignarTrainer_ruta():
             print("Debe ingresar un número.")
 
     horario_seleccionado = horarios_disponibles[horario_id - 1]
-
+    # Se muestran las rutas disponibles y verifica que el usuario elija una de las opciones disponibles
     print("Rutas disponibles:")
     for num, ruta in enumerate(rutas.keys(), 1):
         print(f"{num}. {ruta}")
@@ -123,12 +123,13 @@ def asignarTrainer_ruta():
             print("Selección no válida, intente nuevamente.")
 
     ruta_seleccionada = list(rutas.keys())[ruta_id - 1]
+    # Se crea un diccionario con los grupos que aun no tengan asignado trainer en la ruta seleccionada
     grupos_disponibles = {grupo: info for grupo, info in rutas[ruta_seleccionada].get('grupos', {}).items() if info['trainer_id'] == ""}
 
     if not grupos_disponibles:
         print("No hay grupos disponibles en esta ruta.")
         return
-
+    # En caso de haber grupos disponibles, se muestran y se pide que el usuario escriba el nombre del grupo seleccionado
     print("Grupos disponibles:")
     for grupo in grupos_disponibles:
         print(f"- {grupo}")
@@ -139,17 +140,17 @@ def asignarTrainer_ruta():
             print("El grupo seleccionado no es válido. Intente nuevamente.")
         else:
             break
-
+    # Se asigna el trainer al grupo seleccionado, se asigna el horario al grupo y se modifica a 'No disponible' en esa hora al trainer
     rutas[ruta_seleccionada]['grupos'][grupo_seleccionado]['trainer_id'] = trainer_doc
     rutas[ruta_seleccionada]['grupos'][grupo_seleccionado]['horario'] = horario_seleccionado
     trainers[trainer_doc]['horario_disponible'][horario_seleccionado] = "No disponible"
-
+    # Se guardan los datos en los JSON respectivamente
     dataOpciones.guardar_datos('data/trainers.json', trainers)
     dataOpciones.guardar_datos('data/rutas.json', rutas)
 
     print(f"El trainer {trainer_info['nombres']} {trainer_info['apellidos']} asignado a la ruta {ruta_seleccionada}, grupo {grupo_seleccionado}, horario {horario_seleccionado}.")
 
-def validar_fecha(fecha_str):
+def validar_fecha(fecha_str): # funcion que se utiliza para validar fechas. Esta funcion se utiliza en la función que permite asignar fechas a los grupos
     try:
         fecha = datetime.strptime(fecha_str, "%d-%m-%Y")
         return fecha
