@@ -18,8 +18,10 @@ Este proyecto es un aplicativo creado como parte de la evaluación de habilidade
 
 > [!IMPORTANT]  
 > *La contraseña para entrar a Coordinador es "passcord".*
+
 > [!IMPORTANT]  
 > *Las contraseñas para entrar a Trainers se encuentran en el JSON trainer.json (se necesita el numero de documento y la contraseña).*
+
 > [!IMPORTANT]  
 > *Para entrar a Campers solo se necesita el documento de alguno de los campers en el JSON campers.json.*
 
