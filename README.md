@@ -14,7 +14,9 @@ Este proyecto es un aplicativo creado como parte de la evaluación de habilidade
 
 - **Estado**: completado :white_check_mark:
   
-### Módulos 
+### Menú principal 
+
+### Menú principal 
 
 > [!IMPORTANT]  
 > *La contraseña para entrar a Coordinador es "passcord".*
@@ -48,8 +50,7 @@ Este proyecto es un aplicativo creado como parte de la evaluación de habilidade
 3. Abre Visual Studio.
 4. En el menú principal, selecciona File (Archivo) > Open (Abrir) > Open Folder (Abrir Carpeta).
 5. Navega a la carpeta descomprimida que contiene el proyecto web y seleccionala.
-6. En el menù principal, seleccione Ejecutar. 
----
+6. Ubiquese en el archivo **main.py** y ejecute el archivo en el menù que de se despliega al dar clic derecho. 
 
 ## Autores :woman:
 <a name="autores"></a>
