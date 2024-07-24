@@ -1,4 +1,4 @@
-# Sailor Moon (landing page) 🖥️:
+# CampusApp 🖥️:
 Este proyecto es un aplicativo creado como parte de la evaluación de habilidades en Python. El aplicativo tiene diferentes módulos para gestionar procesos en Campuslands. 
 
 ## Contenido 
