@@ -14,18 +14,30 @@ Este proyecto es un aplicativo creado como parte de la evaluación de habilidade
 
 - **Estado**: completado :white_check_mark:
   
-### Menú principal 
+### Menú principal <br><br>
 
-### Menú principal 
+ <img src="/img_readme/menuprincipal.png" width="60%" alt="skills"> <br><br>
 
-> [!IMPORTANT]  
-> *La contraseña para entrar a Coordinador es "passcord".*
+### Menú del coordinador <br><br>
 
-> [!IMPORTANT]  
-> *Las contraseñas para entrar a Trainers se encuentran en el JSON trainer.json (se necesita el numero de documento y la contraseña).*
+<img src="/img_readme/menucoordinador.png" width="60%" alt="skills"> <br><br>
 
 > [!IMPORTANT]  
-> *Para entrar a Campers solo se necesita el documento de alguno de los campers en el JSON campers.json.*
+> *La contraseña para entrar a Coordinador es "passcord".* <br><br>
+
+### Menú del trainer <br><br>
+
+<img src="/img_readme/menutrainer.png" width="60%" alt="skills"> <br><br>
+
+> [!IMPORTANT]  
+> *Las contraseñas para entrar a Trainers se encuentran en el JSON trainer.json (se necesita el numero de documento y la contraseña).* <br><br>
+
+### Menú del camper <br><br>
+
+<img src="/img_readme/menucamper.png" width="60%" alt="skills"> <br><br>
+
+> [!IMPORTANT]  
+> *Para entrar a Campers solo se necesita el documento de alguno de los campers en el JSON campers.json.* <br><br>
 
 
 ## Tecnologías :computer:
