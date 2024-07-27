@@ -57,16 +57,22 @@ Este proyecto es un aplicativo creado como parte de la evaluación de habilidade
 - Git. 
 
 ### Paso a paso 
-1. Clona el repositorio
-```
-git clone https://github.com/laura2ndrea/Campuslands_CampusApp.git
-```
-3. Descomprime el archivo ZIP en una ubicación de tu elección en tu sistema local.
-4. Abre Visual Studio.
-5. En el menú principal, selecciona File (Archivo) > Open (Abrir) > Open Folder (Abrir Carpeta).
-6. Navega a la carpeta descomprimida que contiene el proyecto web y seleccionala.
-7. Ubiquese en el archivo **main.py** y ejecute el archivo en el menù que de se despliega al dar clic derecho. 
-
+1. Entra a la carpeta donde deseas clonar el repositorio.
+2. Abre el terminal y copia el siguiente código: <br><br>
+   ```
+   git clone https://github.com/laura2ndrea/Campuslands_CampusApp.git
+   ```
+3. Abre Visual Studio Code.
+4. Haz clic en los tres puntos al lado de "Run". En el menú desplegable, selecciona "Terminal" y luego "New Terminal".<br><br>
+   <img src="/img_readme/menucamper.png" width="60%" alt="skills"> <br><br>
+5. Navega a la carpeta donde se encuentra el repositorio. <br><br>
+   ```
+   cd ruta/a/tu/carpeta
+   ```
+6. Para ejecutar el programa, utiliza el siguiente comando:<br><br>
+   ```
+   python main.py
+   ```
 ## Autores :woman:
 <a name="autores"></a>
 
