@@ -57,12 +57,15 @@ Este proyecto es un aplicativo creado como parte de la evaluación de habilidade
 - Git. 
 
 ### Paso a paso 
-1. Descarga el archivo ZIP del repositorio desde GitHub.
-2. Descomprime el archivo ZIP en una ubicación de tu elección en tu sistema local.
-3. Abre Visual Studio.
-4. En el menú principal, selecciona File (Archivo) > Open (Abrir) > Open Folder (Abrir Carpeta).
-5. Navega a la carpeta descomprimida que contiene el proyecto web y seleccionala.
-6. Ubiquese en el archivo **main.py** y ejecute el archivo en el menù que de se despliega al dar clic derecho. 
+1. Clona el repositorio
+```
+git clone https://github.com/laura2ndrea/Campuslands_CampusApp.git
+```
+3. Descomprime el archivo ZIP en una ubicación de tu elección en tu sistema local.
+4. Abre Visual Studio.
+5. En el menú principal, selecciona File (Archivo) > Open (Abrir) > Open Folder (Abrir Carpeta).
+6. Navega a la carpeta descomprimida que contiene el proyecto web y seleccionala.
+7. Ubiquese en el archivo **main.py** y ejecute el archivo en el menù que de se despliega al dar clic derecho. 
 
 ## Autores :woman:
 <a name="autores"></a>
