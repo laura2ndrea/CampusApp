@@ -2,14 +2,14 @@
 Este proyecto es un aplicativo creado como parte de la evaluación de habilidades en Python. El aplicativo tiene diferentes módulos para gestionar procesos en Campuslands. 
 
 ## Contenido 
-1. [Información general](#info-general)
+1. [Información general](#informacion-generla)
 2. [Tecnologías](#tecno)
-3. [Instalacion](#install)
+3. [Instalación y ejecución](#install)
 4. [Autores](#autores)
 
 ---
    
-## Información general :speech_balloon:
+## Información general:speech_balloon:
 <a name="info-general"></a>
 
 - **Estado**: completado :white_check_mark:
