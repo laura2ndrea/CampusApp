@@ -38,9 +38,8 @@ Este proyecto es un aplicativo creado como parte de la evaluación de habilidade
 > [!IMPORTANT]  
 > *Para entrar a Campers solo se necesita el documento de alguno de los campers en el JSON campers.json.* <br><br>
 
-
-## Tecnologías :computer:
 <a name="tecno"></a>
+## Tecnologías :computer:
 
 - **Pyton:** lenguaje utilizado para desarrollar el aplicativo. 
 - **Visual Studio Code:** editor código fuente utilizado para desarrollar el aplicativo. 
