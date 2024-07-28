@@ -2,15 +2,14 @@
 Este proyecto es un aplicativo creado como parte de la evaluación de habilidades en Python. El aplicativo tiene diferentes módulos para gestionar procesos en Campuslands. 
 
 ## Contenido 
-1. [Información general](#informacion-general)
+1. [Información general](#info-generla)
 2. [Tecnologías](#tecno)
 3. [Instalación y ejecución](#install)
 4. [Autores](#autores)
 
 ---
-   
-## Información general :speech_balloon:
 <a name="info-general"></a>
+## Información general :speech_balloon:
 
 - **Estado**: completado :white_check_mark:
   
@@ -47,9 +46,8 @@ Este proyecto es un aplicativo creado como parte de la evaluación de habilidade
 - **Visual Studio Code:** editor código fuente utilizado para desarrollar el aplicativo. 
 
 ---
-
-## Instalación :wrench:
 <a name="install"></a>
+## Instalación y ejecución :wrench:
 
 ### Requisitos 
 - Sistema operativo compatible con Visual Studio Code. 
@@ -73,8 +71,8 @@ Este proyecto es un aplicativo creado como parte de la evaluación de habilidade
    ```
    python main.py
    ```
-## Autores :woman:
 <a name="autores"></a>
+## Autores :woman:
 
 - **Laura Rodríguez**:
    - *Aportes: diseño de la página, construcción del código, documentación.*
